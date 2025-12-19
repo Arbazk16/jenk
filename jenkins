@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Jenkins team'
+            }
+        } // <--- Close Stage 1 here
+
+        stage('this is stage 2') {
+            steps {
+                echo 'this is stage 2'
+            }
+        } // <--- Close Stage 2 here
+    }
+}
